@@ -1,0 +1,32 @@
+{
+  "name": "quickbooks-online-mcp-server2",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QuickBooks Online MCP server on Cloudflare Workers with OAuth 2.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "tsc -b",
+    "deploy": "wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "agents": "^0.0.88",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "wrangler": "^4.2.0"
+  }
+}
